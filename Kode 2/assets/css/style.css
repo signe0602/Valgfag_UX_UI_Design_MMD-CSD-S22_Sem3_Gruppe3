@@ -1,0 +1,755 @@
+:root {
+    --blueLight: #C4E1E9;
+    --blueMedium: #35648C;
+    --blueDark: #24435E;
+
+    --yellowLight: #FFEDB7;
+    --yellowMedium: #F2D479;  
+    --yellowDark: #CCB366;
+
+    --orangeLight: #FFBC6A;
+    --orangeMedium: #F28705;  
+    --orangeDark: #AA5F03;
+
+    --white: #FFFFFF;  
+    --black: #000000;
+  }
+
+
+h1{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 72px;
+    color: var(--black);
+    margin: 10px;
+}
+
+h2{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 48px;
+    color: var(--blueDark);
+    margin: 10px;
+}
+
+h3{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 32px;
+    color: var(--blueDark);
+    margin: 10px;
+}
+
+h4{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 24px;
+    color: var(--blueDark);
+    margin: 10px;
+}
+
+h5{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 24px;
+    color: var(--blueDark);
+    margin: 10px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+.grid-container {
+    top: 0;
+    padding: 5px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 20px;
+    padding: 10px;
+  }
+
+  .grid-item {
+     gap: 10px;
+    text-align: center;
+    padding-bottom: 100%;
+  }
+
+ 
+
+/* Når i laver en Class eller Id, så start med at skrive sidenavnet først. Så vores classes  */
+/* og Id'er ikke rammer hinanden når det hele skal samles i et CSS eksempel: class="træningImg" class="opholdH1", */ */
+
+
+/*-------------------------------------NAVIGATION----------------------------------------*/
+.menu-item > a > p{
+  text-decoration: none;
+}
+.dropdown-item > a{
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #ffff;
+  color: #24435E;
+  display: grid;
+  grid-template-columns: 30% 35% 10% 10% 2%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1px;
+}
+
+/* Styling for logoet */
+
+
+/* Styling for menuen */
+.main-menu {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+/* Styling for menu punkterne */
+.menu-item {
+  margin-right: 50px;
+  position: relative;
+  
+}
+
+
+/* Styling for dropdown-menuen */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #C4E1E9;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px;
+  border-top: 1px solid #fff; 
+}
+
+.dropdown-indicator{
+width: 15%;
+margin-left: 23px;
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+/*-------------------------------------LANDINGPAGE----------------------------------------*/
+.buttons {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 10px; 
+}
+
+button{
+background-color: #F28705;
+color: #000000;
+cursor: pointer; /* Laver en hånd når man hover over, hvilket indikerer at man kan trykke på den */
+padding: 10px;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+width: 11rem;
+}
+button:hover{
+  background-color: #F2D479;
+}
+/* stil for todelt knap */
+
+.knap-del {
+  background-color: white;
+  color: #000000;
+  border: 3px solid #F28705;
+  cursor: pointer; 
+  padding-left: 1 rem;
+  padding-right: 1 rem;
+  width: 50%; /* Del halverer knapperne - så de er lige store */
+  float: left; /* Sætter dem på linje */
+  box-sizing: border-box; /* Sætter dem på linje */
+  border-radius: 5px; 
+}
+.knap-del, p {
+  margin: 0%;
+}
+.knap-del:hover{
+  background-color: #F2D479;
+}
+.knap-del.clicked {
+  background-color: #F28705; /* så den bliver orange når man trykker på den*/
+}
+/* Stil for ikon */
+.Icon-small{
+  width: 2rem;
+  color: #35648C;
+}
+/* Hero sektion */
+#forside-billede {
+  background-image: url('/assets/images/Forsidebillede.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#questions-image {
+  background-image: url('/assets/images/ToHunde.jpg');
+  width: 100%;
+  height: 480px;
+}
+.tjek{
+  margin-top: 5rem;
+  grid-column: 2/7;
+  grid-row: 1/ span 1;
+  display: inline;
+}
+.tjek, img, h5{
+  display: inline;
+}
+/* Mød vores team sektionen */
+#Se-mere-tekst{
+  grid-column: 5/9;
+  grid-row: 2/ span 1;
+  text-align: center;
+  margin-top: 11rem;
+}
+#Arrow{
+  grid-column: 5/9;
+  grid-row: 3/ span 1;
+  margin-left: 13.5rem;
+}
+#vores-team{
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  grid-column: 2/7;
+  grid-row: 1/ span 3;
+}
+
+.eksperter-billede{
+  border-radius: 10rem;
+  padding: 10px;
+}
+#ekspert-1{
+  text-align: center;
+  margin-top: 4rem;
+  grid-column: 8/ 10;
+  grid-row: 1/ span 1;
+}
+#ekspert-2{
+  text-align: center;
+  margin-top: 4rem;
+  grid-column: 10/ 12;
+  grid-row: 1/span 1;
+}#ekspert-3{
+  text-align: center;
+  grid-column: 8/ 10;
+  grid-row: 2/span 1;
+}
+#ekspert-4{
+  text-align: center;
+  grid-column: 10/ 12;
+  grid-row: 2/span 1;
+}
+#ekspert-5{
+  text-align: center;
+  grid-column: 8/ 10;
+  grid-row: 3/span 1;
+}
+#ekspert-6{
+  text-align: center;
+  grid-column: 10/ 12;
+  grid-row: 3/span 1;
+}
+
+/* Spørgsmål sektionen */
+.flex-container {
+  display: flex;
+  align-items: center; /* Sentrer elementer vertikalt */
+  gap: 20px;
+}
+.icon-button {
+  cursor: pointer;
+  width: 2rem;
+}
+#questions{
+  grid-column: 4/10;
+}
+#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9 {
+  display: none;
+}
+
+
+/*-------------------------------------ADOPTIONSDYR----------------------------------------*/
+.adoptionsdyr-billede{
+    background-image: url('/assets/images/adoption.png'); 
+    background-size: 75%;
+    background-repeat: no-repeat;
+    
+  
+}
+
+/* Samme style bruges op traening.html */
+.blue-box {
+  height: 301px;
+  margin-top: 8rem;
+  background-color:#C4E1E9;
+  opacity: 85%;
+  grid-column: 1/ span 12;  
+}
+.blue-box-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin-left: 3rem; 
+}
+
+.blue-box-column {
+  padding: 20px; 
+  position: relative; 
+  margin: 3rem;
+  margin-top: 5px;
+}
+
+/* styling af valget fa hund eller kat */
+.filtrering {
+  display: inline;
+  text-align: center;
+}
+
+
+/* Cards til adoptionsdyrene*/
+.card{
+  margin-top: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Laver drop */
+  padding: 1rem;
+  display: inline;
+}
+.card-bund{
+  background-color: #C4E1E9;
+  display: inline-block;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.beskrivelse{
+  display: inline-block;
+}
+.ikon-højre {
+  display: flex;
+  gap: 1rem;
+}
+.ikon-højre h3{
+  padding-right: 7rem;
+}
+#card1{
+  grid-column: 2/7;
+  grid-row: 1 / span 1;
+}
+#card2{
+  grid-column: 7/12;
+  grid-row: 1 / span 1;
+}
+#card3{
+  grid-column: 2/7;
+  grid-row: 2 / span 1;
+}
+#card4{
+  grid-column: 7/12;
+  grid-row: 2 / span 1;
+}
+/* Styling af linkede billeder */
+.objects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* To kolonner */
+  gap: 10px; /* imellem de to rækker*/
+  justify-content: center; /* Centrerer indhold vandret */
+  align-items: center; /* Centrerer indhold lodret */
+  margin-left: 20rem;
+}
+.image {
+  position: relative;
+}
+.image img {
+  width: 50%;
+  border: 4px solid orange; /* Orange grænse omkring billedet */
+}
+
+.image .image-text {
+  position:absolute;
+  top: 30%;
+  left: 4%;
+  color: #ffffff; 
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/*-------------------------------------OPHOLD----------------------------------------*/
+#Ophold-billede{
+  background-image: url('/assets/images/book.png'); 
+  width: 100%;
+  height: 885px;
+  background-repeat: no-repeat;
+
+}
+#OverskriftOphold{
+  grid-column: 3/7;
+  grid-row: 1 /span 1;
+  margin-top: 5rem; 
+}
+#BookOphold1{
+  grid-column: 3/ 5;
+  grid-row: 2 /span 1;
+}
+#BookOphold2{
+  grid-column: 6/7;
+  grid-row: 2 /span 1;
+}
+#BookOphold3{
+  grid-column: 7/8;
+  grid-row: 2 /span 1;
+}
+#BookOphold4{
+  grid-column: 8/ 9;
+  grid-row: 2 /span 1;
+}  
+#BookOphold5{
+  grid-column: 9/ 10;
+  grid-row: 2 /span 1;
+}
+#BookOphold6{
+  grid-column: 3/ 5;
+  grid-row: 3 /span 1;
+}
+#BookOphold7{
+  grid-column: 5/ 6;
+  grid-row: 3 /span 1;
+}
+#BookOphold8{
+  grid-column: 6/ 7;
+  grid-row: 3 /span 1;
+}
+#BookOphold9{
+  grid-column: 7/ 9;
+  grid-row: 3 /span 1;
+}
+#BookOphold10{
+  grid-column: 9/ 10;
+  grid-row: 3 /span 1;
+}
+#BookOphold11{
+  grid-column: 9/ 10;
+  grid-row: 4 /span 1;
+}
+
+/* Design for tekstfeldt */
+.tekstfelt {
+  color: #000000; 
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Laver drop */
+}
+/* Se mere */
+#Se-mere-tekst2{
+  grid-column: 5/9;
+  grid-row: 5/ span 1;
+  text-align: center;
+  margin-top: 11rem;
+}
+/* information om ophold */
+#information-ophold{
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+/*-------------------------------------TRÆNING----------------------------------------*/
+#traeningBody{
+  z-index: -1;
+  position: absolute;
+}
+
+#traeningH1{
+  font-size: 36px;
+  margin-bottom: -60px;
+}
+
+.tjek>button{
+  margin-top: 1.5rem;
+}
+
+.sektion{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.traeningscard{
+  margin-top: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Laver drop */
+  padding: 1rem;
+  display: inline;
+}
+#traeningscard1 {
+  grid-column:  3/11; 
+  grid-row: 1 / span 1;
+  display: inline;
+  margin-bottom: 3rem;
+}
+
+.blue-box-speciel > h2{
+  text-align: center;
+  margin: -10px;
+}
+
+.blue-box-column-speciel > p{
+  margin: 0%;
+}
+
+.blue-box-speciel {
+  height: 301px;
+  margin-top: 9.5rem;
+  background-color:#C4E1E9;
+  opacity: 85%;
+  grid-column: 1/ span 12;
+}
+
+.blue-box-column-speciel {
+  padding: 20px; 
+  position: relative; 
+  margin: 0%;
+  margin-top: 5px;
+}
+
+#traeningButtonTeam{
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#traeningButton{
+  float: right;
+}
+
+#cardTraening{
+  display: grid;
+  grid-template-columns: 27% 47% 23%;
+  gap: 18px;
+}
+
+.movedown{
+  margin-top: 160px;
+}
+
+.movedown > button{
+  margin-top: 15px;
+}
+
+#iconRight{
+  margin-left: 130px;
+}
+
+/*-------------------------------------AGENT----------------------------------------*/
+.agentGridContainer {
+  display: grid;
+  grid-template-columns:40% 49%;
+  column-gap: 28px;
+  
+}
+
+.agentGridItem {
+  gap: 10px;
+  
+  
+}
+
+.agentGridItem > img {
+  width: 100%;
+}
+
+.agentFormSection {
+background-color: var(--blueLight);
+border-radius: 20px;
+margin-top: 80px;
+padding-left: 140px;
+font-family: 'Roboto', sans-serif;
+padding-bottom: 20px;
+}
+
+.agenInput{
+width: 20vw;
+text-align: center;
+padding: 10px;
+border-radius: 7px;
+border: none;
+box-shadow: 2px 4px 7px #bab9b9;
+}
+
+.agentForm {
+padding-top: 30px;
+}
+
+.agentForm1{
+width: 100px;
+padding-top: 30px;
+padding-bottom: 20px;
+}
+
+.agenInputPost{
+width: 12vw;
+text-align: center;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 7px;
+border: none;
+box-shadow: 2px 4px 7px #bab9b9;
+}
+
+.goalGradient{
+margin-bottom: -10%;
+width: 200%;
+margin-top: 100px
+}
+
+button{
+background-color: #F28705;
+color: #000000;
+padding: 10px;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+width: 11rem;
+}
+
+.agentGridItem > button{
+margin-top: 40px;
+font-family: 'Palanquin Dark', sans-serif;
+}
+
+.agentButtonForsæt{
+float: right;
+}
+
+.checkbox{
+width: 100px;
+color: #24435E;
+}  
+
+.agentGridItem>button>a{
+text-decoration: none;
+color: var(--black);
+font-family: 'Palanquin Dark', sans-serif;
+
+}
+
+
+.specialButton{
+background-color: var(--blueLight);
+border-radius: 20px;
+margin-top: 120px;
+padding-left: 20px;
+font-family: 'Roboto', sans-serif;
+padding-bottom: 20px;}
+
+.specialButton > p{
+  padding-top: 40px;
+}
+
+.knap-del {
+  background-color: white;
+  color: #000000;
+  border: 3px solid #F28705;
+  cursor: pointer;
+  padding-left: 1 rem;
+  padding-right: 1 rem;
+  width: 30%; /* Del halverer knapperne - så de er lige store */
+  float: left; /* Sætter dem på linje */
+  box-sizing: border-box; /* Sætter dem på linje */
+  border-radius: 5px;
+}
+
+.knap-del, p {
+  margin: 0%;
+}
+
+.knap-del:hover{
+  background-color: #F2D479;
+}
+
+.knap-del.clicked {
+  background-color: #F28705; /* så den bliver orange når man trykker på den*/
+}
+
+.container{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+.item{
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+
+/*-------------------------------------AGENT4----------------------------------------*/
+
+
+.agentGridItem > h3{
+text-align: center;
+margin-top: 200px;
+}
+
+
+/*-------------------------------------FOOTER----------------------------------------*/
+footer{
+  font-family: 'Palanquin Dark', sans-serif;
+}
+/*------------FOOTER GRID--------------*/
+.footerGridContainer {
+  display: grid;
+  grid-template-columns: 15% 20% 30% 20% 15%;
+  background-color: var(--blueMedium);
+  padding-top: 20px;
+}
+/*------------FOOTER VENSTRE--------------*/
+.footerGridItem > ul{
+  color: var(--orangeMedium);
+  list-style-type: none;
+  }
+.footerGridItem > ul > li > a{
+  color: var(--orangeMedium);
+  text-decoration: none;
+}
+/*------------FOOTER CENTER--------------*/
+.footerCenter{
+  text-align: center;
+}
+.footerButton{
+  margin: 20px;
+}
+.footerButton > a{
+  text-decoration: none;
+  color: var(--blueMedium);
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 16px;
+}
+.footerCopyright{
+  color: var(--white);
+  font-family: 'Palanquin Dark', sans-serif;
+}
+/*------------FOOTER HØJRE--------------*/
+.footerHøjre >li{
+  color: var(--white);
+}
+.footerHøjre >li >h4{
+  color: var(--white);
+  margin: 0%;
+}
+.footerHøjre {
+  padding-left: 100px;
+  margin-top: -1px;
+}
+.footerEmail{
+  text-decoration: underline;
+}  

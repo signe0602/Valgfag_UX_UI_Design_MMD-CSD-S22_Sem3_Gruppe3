@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejr & Davidsens dyrepension og -internat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/app.js">defer</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navItem">
+            <div class="logo"><img src="Assets/images/PNG/Dyrelogo.png" alt="Dyrelogo"></div>
+        </div>
+        <div class="navItem">
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <p>Adoption</p>
+                    <div class="dropdown-indicator"> <img src="Assets/icons/chevron-down-solid.svg" alt="pil ned"></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="adoptionsdyr.html"><p>Adoptionsdyr</p></a></li>
+                        <li class="dropdown-item"><a href=""><p>Adoptionsprocessen</p></a></li>
+                        <li class="dropdown-item"><a href=""><p>Bortadoptér et dyr</p></a></li>
+                        <li class="dropdown-item"><a href=""><p>Historier</p></a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="ophold.html"><p>Ophold</p></a></li>
+                <li class="menu-item"><a href="traening.html"><p>Træning</p></a></li>
+                <li class="menu-item"><a href=""><p>Tips og tricks</p></a></li> 
+                
+            </ul>
+        </div>
+        <div class="navItem">
+            <button>Opret profil</button>
+        </div>
+        <div class="navItem">
+            <div class="menu-item-profil"><p>Min Profil</p></div>
+        </div>
+        <div class="navItem">
+            <div class="user-icon"><img src="Assets/icons/user-solid.svg"></div>
+        </div>
+    </div>
+<section id="Ophold-billede" class="grid-container">
+    <section id="OverskriftOphold">
+        <h3 id="adoptereOverskrift">BEHOV FOR PASNING BOOK</h3>
+        <h1>OPHOLD</h1>
+    </section>
+    
+    <section id="BookOphold1">
+        <p>Dyr</p>
+        <div class="knap-del" onclick="toggleBackground(this)">
+            <p>Hund</p>
+        </div>
+        <div class="knap-del" onclick="toggleBackground(this)">
+            <p>kat</p>
+        </div>    
+    </section>
+
+    <section id="BookOphold2">
+        <p>Indtjekning</p>
+            <input class="tekstfelt" type="date" name="dato" placeholder="Vælg dato">
+    </section>
+    <section id="BookOphold3">
+        <p>Indtjekning</p>
+            <input class="tekstfelt" type="time" name="tid" placeholder="Vælg dato">
+    </section>
+
+    <section id="BookOphold4">
+        <p>Udtjekning</p>
+            <input class="tekstfelt" type="date" name="dato" placeholder="Vælg dato">
+    </section>
+    <section id="BookOphold5">
+        <p>Udtjekning</p>
+            <input class="tekstfelt" type="time" name="tid" placeholder="Vælg dato">
+    </section>
+
+    <section id="BookOphold6">
+        <p>Dyrets navn</p>
+        <input class="tekstfelt" type="text" name="tekstfelt" placeholder="Navn"> 
+    </section>
+
+    <section id="BookOphold7">
+        <p>Alder</p>
+        <input class="tekstfelt" type="number" name="alder" min="0" max="150"> 
+    </section>
+
+    <section id="BookOphold8">
+        <p>Vægt</p>
+        <input class="tekstfelt" type="number" name="vægt" min="0" step="0.5"> 
+    </section>
+
+    <section id="BookOphold9">
+        <p>Race</p>
+        <input class="tekstfelt" type="text" name="tekstfelt" placeholder="Race"> 
+    </section>
+
+    <section id="BookOphold10">
+        <p>Ønskede tilkøb?</p>
+        <input class="tekstfelt" type="text" name="tekstfelt" placeholder="Tilkøb"> 
+    </section>
+
+    
+    
+
+    <section id="BookOphold11">
+        <button>Book ophold</button>
+    </section>
+
+    <section id="Se-mere-tekst2">
+        <h5 >Mød vores eksperter</h5>
+        <img id="Arrow" class="Icon-small" alt="Arrow-icon" src="assets/icons/chevron-down-solid.svg">
+    </section>
+
+</section>
+
+<section id="information-ophold">
+    <section>
+    <h2>Ophold</h2>
+        <p>Det er en stor beslutning at lade jeres kæledyr blive passet af andre. Derfor lægger vi stor vægt på åbenhed og kommunikation. Vi vil altid være tilgængelige for at besvare jeres spørgsmål og opdatere jer om jeres kæledyrs trivsel.Vores faciliteter er designet med kæledyrs komfort i tankerne og inkluderer indkvarterings-muligheder, omhyggelige hygiejnestandarder og gode udendørs arealer, hvor kæledyr kan få motion og socialisere sig med andre. Derudover har vi et dedikeret personale, som overvåger dyrenes sundhed og trivsel.</p>
+    </section>
+
+    <section>
+    <h2>Priser</h2>
+    <h5>Hunde</h5>
+        <p>Dagpleje (06.00 - 18.00) 150 kr.</p>
+        <br>
+        <p>Pr. overnatning 200 kr. </p>
+    <h5>Katte</h5>
+        <p>Dagpleje (06.00 - 18.00) 100 kr.</p>
+        <br>
+        <p>Pr. overnatning 125 kr. </p>
+    </section>
+
+    <section>
+    <h2>Tilkøb</h2>
+        <p>Alle dyr får selvfølgelig lige meget kærlighed, men alle dyr er forskellige og har derfor også forskellige behov. Så har dit dyr brug for lidt ekstra opmærksomhed, træning, gåtur eller mad? Så kan du tilkøbe det til opholdet, så din pelsede ven får det bedste ophold.</p>
+        <br>
+        <p>Gåtur - 50 kr. pr. ekstra gåtur</p>
+        <br>
+        <p>Ekstra opmærksomhed - 50 kr</p>
+        <br>
+        <p>Træning - 100 kr</p>
+        <br>
+        <p>Mad - 20 kr. pr. ekstra måltid </p>
+    </section>
+</section>
+
+<div class="objects-grid">
+    <div class="image">
+        <a href="index.html">
+        <img src="assets/images/Eksperter.jpg"  alt="Mød eksperter">
+        <div class="image-text"> Mød vores eksperter</div>
+        </a>
+    </div>
+    <div class="image">
+        <a href="url">
+        <img src="assets/images/Tips.jpg" alt="Tips og tricks om dyr">
+        <div class="image-text">Få tips og tricks til dit nye familiemedlem</div>
+        </a>
+    </div>
+</div>
+</body>
+<footer>
+    <section class="footerGridContainer">
+        <div class="footerGridItem"></div>
+        <div class="footerGridItem">
+            <ul class="venstre" >
+                <li><a href="url">Adoption</a></li>
+                <li><a href="ophold.html">Ophold</a></li>
+                <li><a href="traening.html">Træning</a></li>
+                <li><a href="url">Tip og tricks</a></li>
+            </ul>
+        </div>
+        <div class="footerGridItem">
+            <div class="footerCenter">
+            <img src="assets/images/PNG/Dyrelogo.png" alt="logo af pote og Sejr og Davidsens dyrepension- og internat ">
+            <button class="footerButton"><a href="url">+45 00000000</a></button>
+            <p class="footerCopyright">@Copyright Sejr & Davidsen</p>
+            </div>
+        </div>
+        <div class="footerGridItem">
+            <ul class="footerHøjre" >
+                <li><h4>Adresse</h4></li>
+                <li> Merkurvej 11,<br> Brønderslev</li>
+                <li class="footerEmail">kontakst@sejrogdavidsen.dk</li>
+            </ul>
+        </div>
+        <div class="footerGridItem"></div>
+    </section>
+ </footer>
+</html>
